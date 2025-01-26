@@ -6,7 +6,6 @@ on:
 
 jobs:
   acceptance-test:
-    needs: check-if-commit-is-latest
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
