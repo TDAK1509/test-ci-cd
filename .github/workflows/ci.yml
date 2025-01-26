@@ -43,6 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: sleep 60s
 
       - name: Run Acceptance Tests
         run: echo 'running acceptance tests'
