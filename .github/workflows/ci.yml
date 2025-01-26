@@ -38,8 +38,8 @@ jobs:
           fi
 
   acceptance-test:
-    needs: check-latest
-    if: needs.check-latest.outputs.is_latest == 'true'
+    needs: check-if-commit-is-latest
+    if: needs.check-if-commit-is-latest.outputs.is_latest == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
