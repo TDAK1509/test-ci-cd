@@ -15,7 +15,7 @@ jobs:
   check-if-commit-is-latest:
     runs-on: ubuntu-latest
     outputs:
-    is_latest: ${{ steps.check.outputs.is_latest }}
+      is_latest: ${{ steps.check.outputs.is_latest }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
